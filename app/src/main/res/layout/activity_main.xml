@@ -59,6 +59,8 @@
             android:id="@+id/buttonSighIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_sign_in"
             android:text="@string/textButtonSignIn" />
     </LinearLayout>
 
