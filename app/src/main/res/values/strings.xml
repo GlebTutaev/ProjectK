@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">ProjectK</string>
+    <string name="AppName">Приложение</string>
+    <string name="Author">приложение</string>
+    <string name="textB">Войти без авторизации</string>
+    <string name="textButtonSignIn">Войти</string>
 </resources>
