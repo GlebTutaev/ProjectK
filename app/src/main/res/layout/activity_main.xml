@@ -14,28 +14,31 @@
         android:orientation="vertical">
 
         <TextView
-            android:textSize="35sp"
-            android:textColor="@color/black"
-            android:textAlignment="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/AppName" />
+
+            android:fontFamily="@font/suez_one"
+            android:text="@string/AppName"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
 
         <TextView
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:textAlignment="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:text="@string/Author" />
+            android:text="@string/Author"
+            android:fontFamily="@font/roboto_mono_italic"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/bottomText"
         android:layout_alignParentBottom="true"
-        android:textSize="12sp"
+        android:textSize="20sp"
         android:textColor="@color/purple_200"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
@@ -59,9 +62,11 @@
             android:id="@+id/buttonSighIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:background="@drawable/btn_sign_in"
-            android:text="@string/textButtonSignIn" />
+            android:text="@string/textButtonSignIn"
+            android:layout_weight="1"
+            android:textColor="@android:color/white" />
+
     </LinearLayout>
 
 </RelativeLayout>
