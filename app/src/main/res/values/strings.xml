@@ -3,4 +3,5 @@
     <string name="Author">Приложение для школы</string>
     <string name="textB">Войти как гость?</string>
     <string name="textButtonSignIn">Войти</string>
+    <string name="textButtonback">Назад</string>
 </resources>

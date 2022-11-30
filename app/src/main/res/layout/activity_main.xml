@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:id="@+id/root_element"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
 
@@ -49,7 +50,7 @@
         <TextView
             android:id="@+id/bottomText"
             android:layout_alignParentBottom="true"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="@color/purple_200"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
@@ -60,10 +61,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:weightSum="1"
             android:layout_above="@+id/bottomText"
-            android:layout_margin="50dp"
+            android:layout_margin="5dp"
             android:layout_centerHorizontal="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -76,6 +77,7 @@
                 android:background="@drawable/btn_sign_in"
                 android:text="@string/textButtonSignIn"
                 android:layout_weight="1"
+                android:onClick="OnClick"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
