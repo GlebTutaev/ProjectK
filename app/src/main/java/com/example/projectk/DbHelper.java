@@ -15,6 +15,10 @@ import java.io.OutputStream;
 
 public class DbHelper extends SQLiteOpenHelper {
 
+    public static final String KEY_ID = "ID";
+    public static final String ROLE = "Role";
+    public static final String LOGIN = "Login";
+    public static final String PASSWORD = "Password";
     private  static String DB_NAME = "DataBase.db";
     private  static String DB_PATH = "";
     private  static final int DB_VERSION = 1;

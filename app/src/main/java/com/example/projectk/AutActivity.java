@@ -20,6 +20,8 @@ public class AutActivity extends AppCompatActivity {
     Button btn_Login;
     Button btn_Back;
 
+    Cursor userCursor;
+
     private DbHelper dbHelper;
     private SQLiteDatabase sqLiteDatabase;
 
@@ -47,9 +49,7 @@ public class AutActivity extends AppCompatActivity {
         edt_Login = findViewById(R.id.LoginField);
         edt_Password = findViewById(R.id.PasswordField);
 
-
-
-
+        dbHelper = new DbHelper(getApplicationContext());
 
         btn_Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +61,16 @@ public class AutActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onResume(){
+
+        super.onResume();
+        sqLiteDatabase = dbHelper.getReadableDatabase();
+        userCursor = sqLiteDatabase.rawQuery("SELECT * FROM Users", null);
+
+
+    }
+
     public void OnClick(View view) {
 
         Intent intent = new Intent(this, MainActivity.class);
